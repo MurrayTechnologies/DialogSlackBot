@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block extra_meta %}{% endblock %}
+    <title>{{title}} | Rocket Reach Bot</title>
+    <link href="{% static 'css/main.css'  %}" rel="stylesheet">
+</head>
+<body>
+<div id="main">
+{% block content %}
+{% endblock %}
+</div>
+</body>
+</html>
